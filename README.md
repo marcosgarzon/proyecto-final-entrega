@@ -11,3 +11,7 @@ Y también:
 Al concretar la compra se envía whatsapp:    
    
 ![image](https://user-images.githubusercontent.com/96453171/213011260-df0b9e20-5379-4f98-9d03-2f6ae9249d30.png)  
+
+VISTA DE USUARIO LOGUEADO CON CARRITO:
+  
+![image](https://user-images.githubusercontent.com/96453171/213011842-d44aa35d-66cb-4c15-9465-810da17290e5.png)
