@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node Ecommerce | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full bg-gray-400">
+  <nav class="max-w-[1300px] h-[80px] mx-auto px-4 flex justify-between items-center">
+    <p class="text-3xl font-bold">Node Ecommerce</p>
+    <p class="text-2xl font-bold">Bienvenido/a <%= user.nombre  %></p>
+    <div>
+      <a class='text-2xl font-bold hover:text-gray-600' href="/logout">LOGOUT</a>
+    </div>
+  </nav>
+  <div class="max-w-[1300px] h-[80px] mx-auto px-4 flex justify-between items-center">
+    <% if (cantidad == 0) { %>
+      <p class="text-2xl font-bold">No ha agregado nada al carrito.</p> 
+    <% } else {%>
+      <p class="text-2xl font-bold">Su carrito tiene <%= result.productos.length %>  productos.</p>       
+    <% } %>
+  </div>
+
+  <div class="max-w-[1300px] mx-auto mt-2">
+    <% if (cantidad !== 0) { %>
+      <div class="w-full grid grid-cols-3 gap-6">
+        <% for( let i = 0; i < result.productos.length; i++ ) { %>
+          <div class="border border-black p-2 rounded-md hover:shadow-sm hover:shadow-black/80 hover:cursor-pointer hover:scale-105 duration-200">  
+            <p class="font-bold"> <%= result.productos[i].nombre %>  </p>
+            <p class="font-bold"> <%= result.productos[i].descripcion %>  </p>
+            <p class="font-bold"> Precio: <%= result.productos[i].price %>  </p>
+            <p class="font-bold"> Cantidad: <%= result.productos[i].quantity %>  </p>
+          </div>
+        <% } %>
+      </div>
+    <% } %>
+  </div>
+</body>
+</html>

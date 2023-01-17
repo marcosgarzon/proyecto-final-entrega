@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node Ecommerce | Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full bg-gray-400">
+  <nav class="max-w-[1300px] h-[80px] mx-auto px-4 flex justify-between items-center">
+    <p class="text-3xl font-bold">Node Ecommerce</p>
+    <div>
+      <a class='text-2xl font-bold hover:text-gray-600' href="/login">LOGIN</a>
+    </div>
+  </nav>
+
+  <div class="max-w-[1300px] h-[80px] mx-auto px-4">
+    <div class="w-full text-center">
+      <p class="text-4xl">REGISTER</p>
+    </div>
+  
+    <form action="/register" method="POST" class="max-w-[500px] mx-auto p-4">      
+      <div class="flex py-3 items-center">
+        <label class='w-[80px] font-bold text-end mr-2' for="email">Email</label>
+        <input class='flex-1 p-2' type="text" name="email" id="email">
+      </div>
+      <div class="flex py-3 items-center">
+        <label class='w-[80px] font-bold text-end mr-2' for="password">Password</label>
+        <input class='flex-1 p-2' type="password" name="password" id="password">
+      </div>
+      <div class="flex py-3 items-center">
+        <label class='w-[80px] font-bold text-end mr-2' for="name">Nombre</label>
+        <input class='flex-1 p-2' type="text" name="name" id="name">
+      </div>
+      <div class="flex py-3 items-center">
+        <label class='w-[80px] font-bold text-end mr-2' for="direccion">Dirección</label>
+        <input class='flex-1 p-2' type="text" name="direccion" id="direccion">
+      </div>
+      <div class="flex py-3 items-center">
+        <label class='w-[80px] font-bold text-end mr-2' for="edad">Edad</label>
+        <input class='flex-1 p-2' type="number" name="edad" id="edad">
+      </div>
+      <div class="flex py-3 items-center">
+        <label class='w-[80px] font-bold text-end mr-2' for="telefono">Teléfono</label>
+        <input class='flex-1 p-2' type="text" name="telefono" id="telefono">
+      </div>
+      <div class="flex py-3 items-center">
+        <label class='w-[80px] font-bold text-end mr-2' for="foto">Foto</label>
+        <input class='flex-1 p-2' type="text" name="foto" id="foto">
+      </div>
+      <div class="w-[40%] mx-auto py-6">
+        <input class='w-full bg-white text-black rounded-lg py-2 hover:cursor-pointer hover:text-yellow-500 hover:shadow-lg' type="submit" value="Registrarse">
+      </div>
+      <div class="w-[60%] mx-auto py-2 text-lg font-bold">
+        <% if (messages.error) { %>
+          <%= messages.error %> 
+        <% } %>
+      </div>
+    </form>
+  </div>  
+
+</body>
+</html>

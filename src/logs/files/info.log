@@ -1,0 +1,8 @@
+[2023-01-17T14:59:09.241] [INFO] INFO - Ruta POST - "localhost:8080" accedida - Email: gmmmarcos@gmail.com - User: Marcos registrado.
+[2023-01-17T14:59:16.809] [INFO] INFO - Ruta GET - "localhost:8080" accedida - Email: gmmmarcos@gmail.com - User: Marcos cerró sesión.
+[2023-01-17T14:59:27.518] [INFO] INFO - Ruta POST - "localhost:8080" accedida - Email: gmmmarcos@gmail.com - User: Marcos logueado.
+[2023-01-17T14:59:36.782] [INFO] INFO - Ruta GET - "localhost:8080" accedida - Email: gmmmarcos@gmail.com - User: Marcos cerró sesión.
+[2023-01-17T16:29:43.651] [INFO] INFO - Ruta POST - "localhost:8080" accedida - Email: gmmmarcos@gmail.com - User: Marcos logueado.
+[2023-01-17T16:32:15.934] [INFO] INFO - Ruta GET - "localhost:8080" accedida - Email: gmmmarcos@gmail.com - User: Marcos cerró sesión.
+[2023-01-17T16:44:46.046] [INFO] INFO - Ruta POST - "localhost:8080" accedida - Email: gmmmarcos@gmail.com - User: Marcos logueado.
+[2023-01-17T17:09:18.428] [INFO] INFO - Ruta POST - "localhost:8080" accedida - Email: marcosgarzonmdq@gmail.com - User: Marcos registrado.
